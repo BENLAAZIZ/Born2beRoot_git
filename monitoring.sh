@@ -3,8 +3,8 @@
 architec = $(uname -a)
 cpuphysical = $(cat /proc/cpuinfo | grep "physical id" | wc -l)
 numbervcpu = $(nproc) ou lscpu | grep "^CPU(s)" | awk '{print $2}'
-memory_usage = $(free -b | grep "Mem" | awk '{printf("%d/%dMB (%.2f%%) \n", $3, $2, ($3 * 100 / $2))}')
-memory_free = $(free -b | grep "Mem" | awk '{printf("%d/%dMB (%.2f%%) \n", $4, $2, ($4 * 100 / $2))}')
+memory_usage = $(free -m | grep "Mem" | awk '{printf("%d/%dMB (%.2f%%) \n", $3, $2, ($3 * 100 / $2))}')
+memory_free = $(free -m | grep "Mem" | awk '{printf("%d/%dMB (%.2f%%) \n", $4, $2, ($4 * 100 / $2))}')
 cpu_load = $(free -m | grep "Mem" | awk '{printf("%.2f%%\n", (($4 - $7) / $4) * 100)}')
 last_boot = $(who -b | awk '{print $3, $4}')
 lvm_active = $(lvmu=$(if [ $(lsblk | grep "lvm" | wc -l) -eq 0 ]; then echo no; else echo yes; fi))
