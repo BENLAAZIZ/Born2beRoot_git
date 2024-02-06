@@ -12,8 +12,16 @@ coni_tcp = $(netstat -an | grep "ESTABLISHED" | wc -l)
 user_log = $(who | cut -d " " -f 1 | sort -u | wc -l)
 network = $(echo "$(hostname -I) $(ip link show | grep "ether" | awk '{printf("(%s)", $2)}')")
 Sudo = $(echo "$(journalctl -q _COMM=sudo | grep COMMAND | wc -l) cmd")
-wall "
-		
 
-
-	"
+wall "	#Architecture: $architec
+	#CPU physical: $cpuphysical
+	#vCPU: $numbervcpu
+	#Memory Usage: $memory_usage
+	#Disk Usage: $memory_free
+	#CPU load: $cpu_load
+	#Last boot: $last_boot
+	#LVM use: $lvm_active
+	#Connections TCP: $coni_tcp
+	#User log: $user_log
+	#Network: $network
+	#Sudo: $nSudo"
