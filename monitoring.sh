@@ -4,7 +4,9 @@ architec=$(uname -a)
 
 cpuphysical=$(cat /proc/cpuinfo | grep "physical id" | uniq | wc -l)
 
-numbervcpu=$(nproc)
+numbervcpu=$(lscpu | grep "^CPU(s)" | awk '{print $2}')
+#numbervcpu=$(nproc)
+
 
 memory_usage=$(free -m | grep "Mem" | awk '{printf("%d/%dMB (%.2f%%) \n", $3, $2, ($3 * 100 / $2))}')
 
