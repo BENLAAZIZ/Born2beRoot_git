@@ -2,7 +2,7 @@
 
 architec=$(uname -a)
 
-cpuphysical=$(cat /proc/cpuinfo | grep "physical id" | wc -l)
+cpuphysical=$(cat /proc/cpuinfo | grep "physical id" | uniq | wc -l)
 
 numbervcpu=$(nproc)
 
