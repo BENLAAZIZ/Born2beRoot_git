@@ -1,4 +1,4 @@
-# Born2beRoot_git
+# born2beroot  ![Custom Badge](https://img.shields.io/badge/Born2beRoot_git-Ged?color=green)
 ### steps for building this project
 #### step 1. Downloading Your Virtual Machine
 #### step 2. Installing Your Virtual Machine
@@ -7,6 +7,8 @@
 #### step 5. Connecting to SSH
 #### step 6. Continue Configurating Your Virtual Machine
 #### step 8. Signature.txt
+
+
 
 # `knowledges about this subject`
 ### 1. vm & virtuallisation
