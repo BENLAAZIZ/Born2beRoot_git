@@ -20,6 +20,9 @@ a GPU, and more.Depending on the type of hypervisor, this server
  either has an operating system (OS) installed or runs with a 
 bare-metal hypervisor without an OS.
 
+<img width="658" alt="Screen Shot 2024-02-11 at 8 09 24 PM" src="https://github.com/BENLAAZIZ/Born2beRoot_git/assets/99501397/dd1b6995-772c-408a-859c-6eca26305b19">
+
+
 #### 1.1 Hyperviseur
 A hypervisor is a software that you can use to run multiple virtual machines on a single physical machine. Every virtual machine has its own operating system and applications. The hypervisor allocates the underlying physical computing resources such as CPU and memory to individual virtual machines as required
 
@@ -80,7 +83,7 @@ Here's how it works:
 
 LVM provides features like resizing volumes on-the-fly, creating snapshots for backups, and migrating data between physical devices without downtime. It adds a layer of abstraction that simplifies storage management and enhances flexibility in handling disk space on Linux systems.
 
-<img width="412" alt="Screen Shot 2024-02-11 at 7 58 34 PM" src="https://github.com/BENLAAZIZ/Born2beRoot_git/assets/99501397/ed81b6b0-0a81-499c-8c98-bee8dcffdc74">
+<img width="700" height="300" alt="Screen Shot 2024-02-11 at 7 58 34 PM" src="https://github.com/BENLAAZIZ/Born2beRoot_git/assets/99501397/ed81b6b0-0a81-499c-8c98-bee8dcffdc74">
 
 
 
