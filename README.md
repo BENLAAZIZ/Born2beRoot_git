@@ -39,4 +39,70 @@ A hypervisor is a software that you can use to run multiple virtual machines on 
 
  The purpose of virtual machines is to maximize hardware utilization and flexibility by allowing multiple operating systems and applications to run independently on a single physical machine. This enables easier management, better resource allocation, and more efficient use of computing resources for tasks like testing, development, and running diverse software environments.
 
- 
+  ### 4. difference between aptitude and apt ? 
+  
+<img width="534" alt="Screen Shot 2024-02-11 at 6 51 15 PM" src="https://github.com/BENLAAZIZ/Born2beRoot_git/assets/99501397/ff67d4df-6503-4251-b0f2-116c959470ba">
+
+### 5. What is APPArmor ?
+
+AppArmor is a security module for Linux that sets rules, called profiles, for programs. These rules limit what resources and actions a program can access, enhancing system security. By confining applications to specific permissions, AppArmor reduces the risk of unauthorized access and helps prevent both known and unknown vulnerabilities from being exploited. It provides proactive protection against external threats and internal flaws, making it an effective and user-friendly tool for securing Linux systems.
+
+
+### 6. Hostname and partitions :
+
+#### - Check that the hostname of the machine is correctly formatted.
+
+`* Check partitions: lsblk`
+  
+#### - Modify this hostname then restart the machine. The hostname should be updated.
+
+`* To change hostname: sudo vim /etc/hostname`
+  
+#### -  Restore the machine to its original hostname.
+
+`* Restore it: sudo vim /etc/hostname`
+
+#### - View the partitions for this VM.
+
+`* lsblk`
+
+### 7. how LVM works and what it is all about
+
+LVM, or Logical Volume Manager, is a software tool used in Linux systems to manage disk storage more flexibly. It works by abstracting physical storage devices, such as hard drives or SSDs, into logical volumes that can be resized, moved, and combined dynamically.
+
+Here's how it works:
+
+Physical Volumes (PVs): These are the actual storage devices like hard drives or partitions.
+
+Volume Groups (VGs): PVs are grouped together into Volume Groups. This pool of storage can span multiple physical devices.
+
+Logical Volumes (LVs): VGs are divided into Logical Volumes. These are like virtual partitions that can be resized without the need to repartition the physical disks.
+
+LVM provides features like resizing volumes on-the-fly, creating snapshots for backups, and migrating data between physical devices without downtime. It adds a layer of abstraction that simplifies storage management and enhances flexibility in handling disk space on Linux systems.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
