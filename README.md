@@ -68,29 +68,19 @@ AppArmor is a security module for Linux that sets rules, called profiles, for pr
 
 ### 7. how LVM works and what it is all about
 
-LVM, or Logical Volume Manager, is a software tool used in Linux systems to manage disk storage more flexibly. It works by abstracting physical storage devices, such as hard drives or SSDs, into logical volumes that can be resized, moved, and combined dynamically.
+LVM, or `Logical Volume Manager`, is a software tool used in Linux systems to manage disk storage more flexibly. It works by abstracting physical storage devices, such as hard drives or SSDs, into logical volumes that can be resized, moved, and combined dynamically.
 
 Here's how it works:
 
-Physical Volumes (PVs): These are the actual storage devices like hard drives or partitions.
+* `Physical Volumes (PVs)`: These are the actual storage devices like hard drives or partitions.
 
-Volume Groups (VGs): PVs are grouped together into Volume Groups. This pool of storage can span multiple physical devices.
+* `Volume Groups (VGs)`: PVs are grouped together into Volume Groups. This pool of storage can span multiple physical devices.
 
-Logical Volumes (LVs): VGs are divided into Logical Volumes. These are like virtual partitions that can be resized without the need to repartition the physical disks.
+* `Logical Volumes (LVs)`: VGs are divided into Logical Volumes. These are like virtual partitions that can be resized without the need to repartition the physical disks.
 
 LVM provides features like resizing volumes on-the-fly, creating snapshots for backups, and migrating data between physical devices without downtime. It adds a layer of abstraction that simplifies storage management and enhances flexibility in handling disk space on Linux systems.
 
-
-
-
-
-
-
-
-
-
-
-
+<img width="412" alt="Screen Shot 2024-02-11 at 7 58 34 PM" src="https://github.com/BENLAAZIZ/Born2beRoot_git/assets/99501397/ed81b6b0-0a81-499c-8c98-bee8dcffdc74">
 
 
 
