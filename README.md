@@ -87,11 +87,15 @@ LVM provides features like resizing volumes on-the-fly, creating snapshots for b
 
 <img width="700" height="300" alt="Screen Shot 2024-02-11 at 7 58 34 PM" src="https://github.com/BENLAAZIZ/Born2beRoot_git/assets/99501397/ed81b6b0-0a81-499c-8c98-bee8dcffdc74">
 
+# `SUDO`
 
+Sudo is a command-line tool in Unix and Unix-like operating systems that allows users to run programs with the security privileges of another user, typically the system administrator (root). It's commonly used to perform administrative tasks while providing accountability and security by logging all executed commands.
+What is sudo and su?
+Su allows users to switch to the root account and perform administrative tasks, while sudo allows users to execute specific commands with elevated privileges. Sudo is more secure than su since it offers more granular control over user permissions
 
+# `UFW (uncomplicated firewall)`
 
-
-
+Uncomplicated Firewall (UFW) is a program for managing a netfilter firewall designed to be easy to use. It uses a command-line interface consisting of a small number of simple commands, and uses iptables for configuration.
 
 
 
