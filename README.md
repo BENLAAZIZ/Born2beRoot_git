@@ -94,9 +94,17 @@ What is sudo and su?
 Su allows users to switch to the root account and perform administrative tasks, while sudo allows users to execute specific commands with elevated privileges. Sudo is more secure than su since it offers more granular control over user permissions
 
 # `ssh ( Secure Shell)`
-SSH stands for Secure Shell and is a network protocol that provides a secure (i.e. encrypted) way to connect to a remote computer or server.
+  - SSH stands for Secure Shell and is a network protocol that provides a secure (i.e. encrypted) way to connect to a remote computer or server.
+  - SSH stands for Secure Shell or Secure Socket Shell. It is a cryptographic network protocol that allows two computers to communicate and share the data over an insecure network such as the internet. It is used to login to a remote server to execute commands and data transfer from one machine to another machine.
+
 <img width="856" alt="Screen Shot 2024-02-12 at 5 40 32 PM" src="https://github.com/BENLAAZIZ/Born2beRoot_git/assets/99501397/7f078d3b-1f70-4ead-ba55-bfa58f3a6c2b">
 
+   ### How does SSH Works?
+The SSH protocol works in a client-server model, which means it connects a secure shell client application (End where the session is displayed) with the SSH server (End where session executes).
+
+As discussed above, it was initially developed to replace insecure login protocols such as Telnet, rlogin, and hence it performs the same function.
+
+<img width="856" alt="Screen Shot 2024-02-12 at 5 48 27 PM" src="https://github.com/BENLAAZIZ/Born2beRoot_git/assets/99501397/bb3facbe-d136-443d-a134-ceb4a66aacd2">
 
 # `UFW (uncomplicated firewall)`
 
