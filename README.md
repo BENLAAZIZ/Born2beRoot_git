@@ -106,6 +106,16 @@ As discussed above, it was initially developed to replace insecure login protoco
 
 <img width="856" alt="Screen Shot 2024-02-12 at 5 48 27 PM" src="https://github.com/BENLAAZIZ/Born2beRoot_git/assets/99501397/bb3facbe-d136-443d-a134-ceb4a66aacd2">
 
+##### `Understanding Different Encryption Techniques`
+   The significant advantage offered by SSH over its predecessors is the use of encryption to ensure a secure transfer of information between the host and the client. Host refers to the remote server you are trying to access, while the client is the computer you are using to access the host. There are three different encryption technologies used by SSH:
+
+`1. Symmetrical encryption`
+`2. Asymmetrical encryption`
+`3. Hashing`
+
+#### 1. Symmetrical encryption
+
+
 # `UFW (uncomplicated firewall)`
 
 Uncomplicated Firewall (UFW) is a program for managing a netfilter firewall designed to be easy to use. It uses a command-line interface consisting of a small number of simple commands, and uses iptables for configuration.
