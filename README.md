@@ -93,6 +93,11 @@ Sudo is a command-line tool in Unix and Unix-like operating systems that allows 
 What is sudo and su?
 Su allows users to switch to the root account and perform administrative tasks, while sudo allows users to execute specific commands with elevated privileges. Sudo is more secure than su since it offers more granular control over user permissions
 
+# `ssh ( Secure Shell)`
+SSH stands for Secure Shell and is a network protocol that provides a secure (i.e. encrypted) way to connect to a remote computer or server.
+<img width="856" alt="Screen Shot 2024-02-12 at 5 40 32 PM" src="https://github.com/BENLAAZIZ/Born2beRoot_git/assets/99501397/7f078d3b-1f70-4ead-ba55-bfa58f3a6c2b">
+
+
 # `UFW (uncomplicated firewall)`
 
 Uncomplicated Firewall (UFW) is a program for managing a netfilter firewall designed to be easy to use. It uses a command-line interface consisting of a small number of simple commands, and uses iptables for configuration.
