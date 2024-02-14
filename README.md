@@ -120,6 +120,7 @@ As discussed above, it was initially developed to replace insecure login protoco
 
 Uncomplicated Firewall (UFW) is a program for managing a netfilter firewall designed to be easy to use. It uses a command-line interface consisting of a small number of simple commands, and uses iptables for configuration.
 
+# ->   ufw - program for managing a netfilter firewall
 
 <img width="1203" alt="Screen Shot 2024-02-13 at 11 43 36 PM" src="https://github.com/BENLAAZIZ/Born2beRoot_git/assets/99501397/9fcd7314-5a04-45bb-b00c-3f538d0ffe5c">
 
