@@ -2,11 +2,13 @@
 
 architec=$(uname -a)
 
-cpuphysical=$(cat /proc/cpuinfo | grep "physical id" | wc -l)
+cpuphysical=$(cat /proc/cpuinfo | grep "physical id" | uniq | wc -l)
 
-numbervcpu=$(nproc)
+numbervcpu=$(lscpu | grep "^CPU(s)" | awk '{print $2}')
+#numbervcpu=$(nproc)
 
-memory_usage=$(free -m | grep "Mem" | awk '{printf("%d/%dMB (%.2f%%) \n", $3, $2, ($3 * 100 / $2))}')
+
+memory_usage=$(free --mega | grep "Mem" | awk '{printf("%d/%dMB (%.2f%%) \n", $3, $2, ($3 * 100 / $2))}')
 
 fdisk=$(df -BG | grep "^/dev" | grep -v "/boot" | awk '{f += $2} END {print f}')
 
@@ -28,15 +30,15 @@ network=$(echo "IP $(hostname -I) $(ip link show | grep "ether" | awk '{printf("
 
 nSudo=$(echo "$(journalctl -q _COMM=sudo | grep COMMAND | wc -l) cmd")
 
-wall "	#Architecture: $architec
-	#CPU physical: $cpuphysical
-	#vCPU: $numbervcpu
-	#Memory Usage: $memory_usage
-	#Disk Usage: $udisk/${fdisk}Gb ($pdisk%)
-	#CPU load: $cpu_load%
-	#Last boot: $last_boot
-	#LVM use: $lvm_active
-	#Connections TCP: $coni_tcp ESTABLISHED
-	#User log: $user_log
-	#Network: $network
-	#Sudo: $nSudo"
+wall "    #Architecture: $architec
+    #CPU physical: $cpuphysical
+    #vCPU: $numbervcpu
+    #Memory Usage: $memory_usage
+    #Disk Usage: $udisk/${fdisk}Gb ($pdisk%)
+    #CPU load: $cpu_load%
+    #Last boot: $last_boot
+    #LVM use: $lvm_active
+    #Connections TCP: $coni_tcp ESTABLISHED
+    #User log: $user_log
+    #Network: $network
+    #Sudo: $nSudo"
