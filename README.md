@@ -48,6 +48,10 @@ A hypervisor is a software that you can use to run multiple virtual machines on 
   
 <img width="534" alt="Screen Shot 2024-02-11 at 6 51 15 PM" src="https://github.com/BENLAAZIZ/Born2beRoot_git/assets/99501397/ff67d4df-6503-4251-b0f2-116c959470ba">
 
+  `*apt` is a command-line package management tool used in Debian and Debian-based distributions (like Ubuntu). It's used to install, update, and remove software packages.
+
+ `*aptitude` is another package management tool for Debian systems. It provides a text-based interface with more advanced features than apt, including dependency resolution and interactive package management.
+
 ### 5. What is APPArmor ?
 
 AppArmor is a security module for Linux that sets rules, called profiles, for programs. These rules limit what resources and actions a program can access, enhancing system security. By confining applications to specific permissions, AppArmor reduces the risk of unauthorized access and helps prevent both known and unknown vulnerabilities from being exploited. It provides proactive protection against external threats and internal flaws, making it an effective and user-friendly tool for securing Linux systems.
