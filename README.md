@@ -99,7 +99,8 @@ LVM provides features like resizing volumes on-the-fly, creating snapshots for b
 # `SUDO`
 
 Sudo is a command-line tool in Unix and Unix-like operating systems that allows users to run programs with the security privileges of another user, typically the system administrator (root). It's commonly used to perform administrative tasks while providing accountability and security by logging all executed commands.
-What is sudo and su?
+
+`- What is sudo and su?`
 Su allows users to switch to the root account and perform administrative tasks, while sudo allows users to execute specific commands with elevated privileges. Sudo is more secure than su since it offers more granular control over user permissions
 
 # `ssh ( Secure Shell)`
