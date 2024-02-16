@@ -45,8 +45,8 @@ A hypervisor is a software that you can use to run multiple virtual machines on 
  The purpose of virtual machines is to maximize hardware utilization and flexibility by allowing multiple operating systems and applications to run independently on a single physical machine. This enables easier management, better resource allocation, and more efficient use of computing resources for tasks like testing, development, and running diverse software environments.
 
   ### 4. difference between aptitude and apt ? 
-  
-<img width="534" alt="Screen Shot 2024-02-11 at 6 51 15 PM" src="https://github.com/BENLAAZIZ/Born2beRoot_git/assets/99501397/ff67d4df-6503-4251-b0f2-116c959470ba">
+  <img width="906" alt="Screen Shot 2024-02-16 at 4 21 25 PM" src="https://github.com/BENLAAZIZ/Born2beRoot_git/assets/99501397/a2283329-f369-48bf-960b-ad7ed61c8730">
+
 
   `*apt` is a command-line package management tool used in Debian and Debian-based distributions (like Ubuntu). It's used to install, update, and remove software packages.
 
