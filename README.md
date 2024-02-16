@@ -107,7 +107,8 @@ Su allows users to switch to the root account and perform administrative tasks, 
   - SSH stands for Secure Shell and is a network protocol that provides a secure (i.e. encrypted) way to connect to a remote computer or server.
   - SSH stands for Secure Shell or Secure Socket Shell. It is a cryptographic network protocol that allows two computers to communicate and share the data over an insecure network such as the internet. It is used to login to a remote server to execute commands and data transfer from one machine to another machine.
 
-<img width="856" alt="Screen Shot 2024-02-12 at 5 40 32 PM" src="https://github.com/BENLAAZIZ/Born2beRoot_git/assets/99501397/7f078d3b-1f70-4ead-ba55-bfa58f3a6c2b">
+![download](https://github.com/BENLAAZIZ/Born2beRoot_git/assets/99501397/48f4ca45-5201-407a-9bfb-6254e9b58a90)
+
 
    ### How does SSH Works?
 The SSH protocol works in a client-server model, which means it connects a secure shell client application (End where the session is displayed) with the SSH server (End where session executes).
@@ -125,7 +126,17 @@ As discussed above, it was initially developed to replace insecure login protoco
 
 #### 1. Symmetrical encryption
 
+<img width="674" alt="Screen Shot 2024-02-16 at 7 58 00 PM" src="https://github.com/BENLAAZIZ/Born2beRoot_git/assets/99501397/93b2c6e5-f4ca-4855-8e0e-f43c2e3504f3">
 
+Symmetrical encryption is a type of encryption where one key can be used to encrypt messages to the opposite party, and also to decrypt the messages received from the other participant. This means that anyone who holds the key can encrypt and decrypt messages to anyone else holding the key.
+
+#### 2. Asymmetrical encryption
+
+<img width="674" alt="Screen Shot 2024-02-16 at 7 58 44 PM" src="https://github.com/BENLAAZIZ/Born2beRoot_git/assets/99501397/ddfbc2cd-eb0c-461a-b985-d1edff1f7096">
+
+Asymmetrical encryption is different from symmetrical encryption because to send data in a single direction, two associated keys are needed. One of these keys is known as the private key, while the other is called the public key.
+
+The public key can be freely shared with any party. It is associated with its paired key, but the private key cannot be derived from the public key. The mathematical relationship between the public key and the private key allows the public key to encrypt messages that can only be decrypted by the private key. This is a one-way ability, meaning that the public key has no ability to decrypt the messages it writes, nor can it decrypt anything the private key may send it.
 # `UFW (uncomplicated firewall)`
 
 Uncomplicated Firewall (UFW) is a program for managing a netfilter firewall designed to be easy to use. It uses a command-line interface consisting of a small number of simple commands, and uses iptables for configuration.
