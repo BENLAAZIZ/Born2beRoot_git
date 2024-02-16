@@ -52,6 +52,11 @@ A hypervisor is a software that you can use to run multiple virtual machines on 
 
  `*aptitude` is another package management tool for Debian systems. It provides a text-based interface with more advanced features than apt, including dependency resolution and interactive package management.
 
+- Apart from main difference being that Aptitude is a high-level package manager while APT is lower-level 
+ package manager which can be used by other higher-level package managers
+ - While apt lacks UI, Aptitude has a text-only and interactive UI
+ - Aptitude has a better package management than apt
+ * More: https://www.tecmint.com/difference-between-apt-and-aptitude/
 ### 5. What is APPArmor ?
 
 AppArmor is a security module for Linux that sets rules, called profiles, for programs. These rules limit what resources and actions a program can access, enhancing system security. By confining applications to specific permissions, AppArmor reduces the risk of unauthorized access and helps prevent both known and unknown vulnerabilities from being exploited. It provides proactive protection against external threats and internal flaws, making it an effective and user-friendly tool for securing Linux systems.
