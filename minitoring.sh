@@ -26,7 +26,7 @@ coni_tcp=$(netstat -an | grep "ESTABLISHED" | wc -l)
 
 user_log=$(who | cut -d " " -f 1 | sort -u | wc -l)
 
-network=$(echo "IP $(hostname -I) $(ip link show | grep "ether" | awk '{print $2)')")
+network=$(echo "IP $(hostname -I) $(ip link show | grep "ether" | awk '{print $2}')")
 
 nSudo=$(echo "$(journalctl -q _COMM=sudo | grep COMMAND | wc -l) cmd")
 
