@@ -21,7 +21,6 @@ computer components like CPU cores, a motherboard, RAM, storage disks,
 a GPU, and more.Depending on the type of hypervisor, this server
  either has an operating system (OS) installed or runs with a 
 bare-metal hypervisor without an OS.
-
 <img width="658" alt="Screen Shot 2024-02-11 at 8 09 24 PM" src="https://github.com/BENLAAZIZ/Born2beRoot_git/assets/99501397/dd1b6995-772c-408a-859c-6eca26305b19">
 
 
@@ -119,10 +118,11 @@ As discussed above, it was initially developed to replace insecure login protoco
 
 ##### `Understanding Different Encryption Techniques`
    The significant advantage offered by SSH over its predecessors is the use of encryption to ensure a secure transfer of information between the host and the client. Host refers to the remote server you are trying to access, while the client is the computer you are using to access the host. There are three different encryption technologies used by SSH:
-
 `1. Symmetrical encryption`
 `2. Asymmetrical encryption`
 `3. Hashing`
+<img width="2215" alt="Screen Shot 2024-02-19 at 9 43 50 PM" src="https://github.com/BENLAAZIZ/Born2beRoot_git/assets/99501397/8452f68a-9a60-4771-80c9-ed9602a80350">
+
 
 #### 1. Symmetrical encryption
 
