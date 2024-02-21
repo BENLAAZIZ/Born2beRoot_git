@@ -10,9 +10,9 @@ numbervcpu=$(lscpu | grep "^CPU(s)" | awk '{print $2}')
 
 memory_usage=$(free --mega | grep "Mem" | awk '{printf("%d/%dMB (%.2f%%) \n", $3, $2, ($3 * 100 / $2))}')
 
-fdisk=$(df -BG | grep "^/dev" | grep -v "/boot" | awk '{f += $2} END {print f}')
+free_disk=$(df -BG | grep "^/dev" | grep -v "/boot" | awk '{f += $2} END {print f}')
 
-udisk=$(df -BM | grep "^/dev" | grep -v "/boot" | awk '{u += $3} END {print u}')
+used_disk=$(df -BM | grep "^/dev" | grep -v "/boot" | awk '{u += $3} END {print u}')
 
 pdisk=$(df -BM | grep "^/dev" | grep -v "/boot" | awk '{f += $2; u += $3} END {printf("%.2f%%", (u * 100) / f)}')
 
@@ -34,7 +34,7 @@ wall "	#Architecture: $architec
 	#CPU physical: $cpuphysical
 	#vCPU: $numbervcpu
 	#Memory Usage: $memory_usage
-	#Disk Usage: $udisk/${fdisk}Gb ($pdisk%)
+	#Disk Usage: $user_disk/${free_disk}Gb ($pdisk%)
 	#CPU load: $cpu_load%
 	#Last boot: $last_boot
 	#LVM use: $lvm_active
