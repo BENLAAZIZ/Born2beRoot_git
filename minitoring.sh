@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sleep $(uptime -s | awk -F: '{print $2 % 10 * 60 + $3}')
+
 architec=$(uname -a)
 
 cpuphysical=$(cat /proc/cpuinfo | grep "physical id" | uniq | wc -l)
